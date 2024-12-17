@@ -1,0 +1,14 @@
+# Vim temporary files
+*.swp
+*.swo
+*~
+.*.sw?
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
