@@ -4,6 +4,8 @@ Here you can find useful scripts to customize and distribute DCV client installe
 
 ## MacOS
 
+![macos](https://github.com/user-attachments/assets/ab5a1eea-421e-48a5-a9f2-bc75da35f21e)
+
 You can execute the installer with 
 
 ```bash
