@@ -21,11 +21,6 @@ APP_NAME="DCV Viewer.app"  # Update this if the app name inside the DMG is diffe
 # Installation directory
 INSTALL_LOCATION="/Applications"
 
-# Configuration Domain and Key as per user request
-CONFIG_DOMAIN="com.nicesoftware.dcvviewer"
-CONFIG_KEY="mouse.enable-control-click-as-right-click"
-CONFIG_VALUE=0
-
 # Debug flag
 DEBUG=0
 
@@ -195,7 +190,8 @@ install_app() {
 
     # Apply configuration settings
     echo "Applying configuration settings..."
-    defaults write "$CONFIG_DOMAIN" "$CONFIG_KEY" -int "$CONFIG_VALUE"
+    defaults write com.nicesoftware.dcvviewer mouse.enable-control-click-as-right-click -int 0
+    defaults write com.nicesoftware.dcvviewer /com/nicesoftware/DcvViewer/state/connection/transport -string "quic"
     echo "Configuration applied: $CONFIG_KEY = $CONFIG_VALUE"
 
     # Unmount the DMG
