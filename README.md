@@ -10,7 +10,11 @@ You can execute the installer with
 
 ```bash
 bash install_dcv_client.sh
-# or, if you do not want to download
+```
+
+or, if you do not want to download the script
+
+```bash
 bash -c "$(wget --no-check-certificate -qO- https://raw.githubusercontent.com/NISP-GmbH/DCV-Clients/refs/heads/main/macos/install_dcv_client.sh)"
 ```
 
