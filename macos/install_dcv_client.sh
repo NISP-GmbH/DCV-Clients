@@ -188,11 +188,11 @@ install_app() {
     sudo cp -R "$MOUNT_POINT/$APP_NAME" "$INSTALL_LOCATION/"
     echo "Installed $APP_NAME to $INSTALL_LOCATION."
 
-    # Apply configuration settings
+    # Apply custom configuration settings
     echo "Applying configuration settings..."
     defaults write com.nicesoftware.dcvviewer mouse.enable-control-click-as-right-click -int 0
     defaults write com.nicesoftware.dcvviewer /com/nicesoftware/DcvViewer/state/connection/transport -string "quic"
-    echo "Configuration applied: $CONFIG_KEY = $CONFIG_VALUE"
+    echo "Configurations applied: Control-click as right click, only quic protocol."
 
     # Unmount the DMG
     unmount_dmg "$MOUNT_POINT"
