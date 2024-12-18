@@ -221,11 +221,6 @@ uninstall_app() {
     sudo rm -rf "$INSTALL_LOCATION/$APP_NAME"
     echo "Removed $APP_NAME from $INSTALL_LOCATION."
 
-    # Remove configuration settings
-    echo "Removing configuration settings..."
-    defaults delete "$CONFIG_DOMAIN" "$CONFIG_KEY"
-    echo "Configuration settings removed."
-
     # Conditionally show success message
     if [[ -z "$NO_INTERACTION_ACTION" ]]; then
         show_info "Uninstallation completed successfully."
