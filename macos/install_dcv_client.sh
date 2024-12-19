@@ -190,7 +190,7 @@ install_app() {
 
     # Apply custom configuration settings
     echo "Applying configuration settings..."
-    defaults write com.nicesoftware.dcvviewer mouse.enable-control-click-as-right-click -int 0
+    defaults write com.nicesoftware.dcvviewer.plist /com/nicesoftware/DcvViewer/mouse/enable-control-click-as-right-click -int 0
     defaults write com.nicesoftware.dcvviewer /com/nicesoftware/DcvViewer/state/connection/transport -string "quic"
     echo "Configurations applied: Control-click as right click, only quic protocol."
 
