@@ -4,6 +4,7 @@ The PKG builder script will create a PKG file, a traditional MacOS wizard instal
 
 Enter in the pkg_builder directory to get more information.
 
+![Image](https://github.com/user-attachments/assets/8bee9b9b-0406-43dc-829e-6b2a4c9ac910)
 
 ## MacOS: CLI script
 
