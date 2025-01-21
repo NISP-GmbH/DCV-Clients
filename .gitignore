@@ -3,6 +3,8 @@
 *.swo
 *~
 .*.sw?
+DCVViewerInstaller.pkg
+build/
 
 # macOS system files
 .DS_Store
