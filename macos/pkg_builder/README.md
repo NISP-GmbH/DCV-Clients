@@ -2,6 +2,9 @@
 
 Using this script you can make your own PKG file to customize the DCV Viewer settings.
 
+## Requirement
+
+You need to have Python 3 installed.
 
 ## Creating the .pkg
 
