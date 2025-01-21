@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Apply custom configuration settings
+defaults write com.nicesoftware.dcvviewer.plist /com/nicesoftware/DcvViewer/mouse/enable-control-click-as-right-click -int 0
+defaults write com.nicesoftware.dcvviewer /com/nicesoftware/DcvViewer/state/connection/transport -string "quic"
