@@ -131,13 +131,6 @@ create_pkg_directories() {
 # Function to build the PKG
 build_pkg() {
     python3 quickpkg "$(pwd)/build/Applications/$APP_NAME" --postinstall $(pwd)/scripts/postinstall --preinstall $(pwd)/scripts/preinstall --output $(pwd)/${PKG_FILE_NAME}
-#    pkgbuild \
-#             --root "$(pwd)/$DCV_VIEWER_APP_DIR" \
-#             --scripts $PKG_SCRIPTS_DIRECTORY \
-#             --identifier $PKG_IDENTIFIER \
-#             --version $PKG_VERSION \
-#             --install-location $DCV_SYSTEM_APP_DIR \
-#             $PKG_FILE_NAME
 }
 
 # Function to create the Product Package
